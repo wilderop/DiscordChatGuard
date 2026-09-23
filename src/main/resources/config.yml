@@ -1,0 +1,16 @@
+# Covert Discord webhook chat limiter.
+# In-game chat is never cancelled. Players are never told when Discord drops a line.
+
+# Per player: how many chat lines may be copied to Discord in this window.
+player-window-seconds: 8
+player-max-per-window: 4
+
+# Same player sending the same text again within this window: Discord gets it once.
+repeat-window-seconds: 15
+
+# Whole proxy: extra cap so a pile of accounts cannot 429 the webhook.
+global-window-seconds: 3
+global-max-per-window: 12
+
+# Ops with this permission skip the limiter (default false for everyone).
+bypass-permission: discordchatguard.bypass

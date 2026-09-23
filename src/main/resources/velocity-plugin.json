@@ -1,0 +1,11 @@
+{
+  "id": "discordchatguard",
+  "name": "DiscordChatGuard",
+  "version": "1.0.0",
+  "description": "Silently drops webhook-bound chat spam. In-game chat is not touched.",
+  "authors": ["wilderop"],
+  "dependencies": [
+    { "id": "discord", "optional": false }
+  ],
+  "main": "com.lawlessmc.discordchatguard.DiscordChatGuard"
+}
